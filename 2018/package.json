@@ -1,0 +1,12 @@
+{
+  "name": "aoc-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "shadow-cljs watch aoc"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.7.9"
+  },
+  "dependencies": {}
+}

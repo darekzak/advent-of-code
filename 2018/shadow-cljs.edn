@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies [[cider/cider-nrepl "0.18.0"]]
+
+ :builds
+ {:aoc
+  {:target :browser
+   :modules {:main {:init-fn day1.app/init}}
+   :devtools
+   {:after-load day1.app/reload
+    :http-root "public"
+    :http-port 8080}
+   }}}
