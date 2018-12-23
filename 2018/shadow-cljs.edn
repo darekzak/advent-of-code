@@ -9,9 +9,9 @@
  :builds
  {:aoc
   {:target :browser
-   :modules {:main {:init-fn day1.app/init}}
+   :modules {:main {:init-fn aocapp/mainapp}}
    :devtools
-   {:after-load day1.app/reload
+   {:after-load aocapp/mainapp
     :http-root "public"
     :http-port 8080}
    }}}
